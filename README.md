@@ -13,7 +13,10 @@ Compiles simple statements into RDF Surfaces.
 
 ## Statements
 
+- neg(A,B)
 - conj(A,B)
 - disj(A,B)
 - impl(A,B)
 - proves(A,B)
+
+where A and B are simple letters: a, b, c, ...
