@@ -1,0 +1,10 @@
+#!/bin/bash
+
+STR=$1
+
+if [ "${STR}" == "" ]; then
+    echo "usage: $0 statement"
+    exit 1
+fi
+
+swipl -f parser.pl -g "run(${STR}),halt"
