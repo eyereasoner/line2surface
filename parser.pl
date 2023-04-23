@@ -31,6 +31,15 @@ parse(_,X,Y) :-
   length(L,1),
   format(atom(Y),":~w a :Verb .",L).
 
+parse(_,X,Y) :-
+  X =.. L ,
+  length(L,4),
+  nth0(0,L,t),
+  nth0(1,L,S),
+  nth0(2,L,P),
+  nth0(3,L,O),
+  format(atom(Y),"~w ~w ~w.",[S,P,O]).
+
 parse(I,X,Y) :-
   X =.. L ,
   length(L,2) ,

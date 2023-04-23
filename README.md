@@ -9,6 +9,8 @@ Compiles simple statements into RDF Surfaces.
 
 ./line2surface "proves(conj(disj(a,b),neg(b)),a)" | eye --quiet --blogic -
 
+./line2surface examples/example1.pml
+
 ````
 
 ## Statements
